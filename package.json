@@ -1,0 +1,22 @@
+{
+  "name": "tech-transit-frontend-test",
+  "version": "1.0.0",
+  "description": "This is a frontend application that shows a list of courses using a pagination style of unlimited scrolling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tronax1/Tech-Transit-Frontend-Test.git"
+  },
+  "author": "Jorge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tronax1/Tech-Transit-Frontend-Test/issues"
+  },
+  "homepage": "https://github.com/Tronax1/Tech-Transit-Frontend-Test#readme",
+  "dependencies": {
+    "create-react-app": "^3.3.0"
+  }
+}
