@@ -10,8 +10,18 @@ export default function CoursePage() {
 
     useEffect(()=>{
         async function fetchData() {
-            const allCourses = await axios.get('https://cors-anywhere.herokuapp.com/https://test.mytablemesa.com/api/courses?orderBy=popularity+desc&expand=provider&limit=24&profession=&subjectAreaCode=&state=&provider=&name=')
-            setCourses(allCourses.data.items);
+            let allCourses = [];
+            
+            let url = '/api/courses?orderBy=popularity+desc&expand=provider&limit=24&profession=&subjectAreaCode=&state=&provider=&name='
+            do{
+                const pageCourses = await axios.get(`https://cors-anywhere.herokuapp.com/https://test.mytablemesa.com${url}`);
+                url = pageCourses.data.next;
+                console.log(url)
+                allCourses = allCourses.concat(pageCourses.data.items);
+                console.log(allCourses);
+            }while(url != null);
+
+            setCourses(allCourses);
         }
         fetchData();
     }, []);
