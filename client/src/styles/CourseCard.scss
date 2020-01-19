@@ -1,7 +1,12 @@
 .card-bg{
-    width: 250px;
+    width: 300px;
     height: 250px;
     background-color: red;
     border-radius: 3px;
     box-shadow: 1.5px 2px rgb(83, 83, 83);
+    margin: 8px;
+}
+.card-header{
+    height: 60px;
+    background-color: green;
 }
