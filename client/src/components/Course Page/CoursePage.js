@@ -30,7 +30,8 @@ export default function CoursePage() {
     return (
         <div className = "Courses-Structure">
             {courses.map((item, i) =>(
-                <CourseCard key={i} />
+                <CourseCard key={i} title={item.name} author={item.provider.name} 
+                price={item.price} credits={item.maximumCredits} stars={item.rating} />
             ))}
         </div>
     )

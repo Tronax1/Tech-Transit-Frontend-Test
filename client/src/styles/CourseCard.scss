@@ -9,6 +9,28 @@
     margin: 8px;
 }
 .card-header{
-    height: 60px;
+    height: 25%;
     background-color: $pageBackground;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.credits{
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 4px;
+}
+.card-body{
+    margin-left: 20px;
 }
