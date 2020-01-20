@@ -7,6 +7,8 @@
     border-radius: 3px;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     margin: 8px;
+    display: flex;
+    flex-direction: column;
 }
 .card-header{
     height: 25%;
@@ -21,6 +23,7 @@
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 25px;
 }
 .credits{
     width: 100px;
@@ -31,6 +34,7 @@
     text-align: center;
     padding-top: 4px;
     border: 0.3px solid gray;
+    color: gray;
 }
 .price-color{
     color: #3C7CF4;
@@ -38,4 +42,8 @@
 }
 .card-body{
     margin-left: 20px;
+    flex:1;
+    h5{
+        color: gray;
+    }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Ratings from 'react-ratings-declarative'
 import '../../styles/CourseCard.scss'
 
 export default function CourseCard({title, author, price, credits, stars}) {
@@ -13,7 +14,15 @@ export default function CourseCard({title, author, price, credits, stars}) {
             </div>
             <div className = "card-footer">
                 <div className = "price-color">{price > 0 ? (`$ ${price}`):("FREE")}</div>
-                <div>{stars} Stars</div>
+                <Ratings rating={stars}
+                    widgetRatedColors="yellow"
+                >
+                    <Ratings.Widget widgetSpacing="1px" widgetDimension="20px"/>
+                    <Ratings.Widget widgetSpacing="1px" widgetDimension="20px"/>
+                    <Ratings.Widget widgetSpacing="1px" widgetDimension="20px"/>
+                    <Ratings.Widget widgetSpacing="1px" widgetDimension="20px"/>
+                    <Ratings.Widget widgetSpacing="1px" widgetDimension="20px"/>
+                </Ratings>
             </div>    
         </div>
     )

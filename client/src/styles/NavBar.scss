@@ -1,4 +1,16 @@
 .Nav{
     height: 25vh;
-    background-color: #3C7CF4;
+    background-color: #3C7CF4; 
+    color: white;
+}
+.Nav-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    select{
+        background-color: transparent;
+        color: white;
+    }
+
 }
