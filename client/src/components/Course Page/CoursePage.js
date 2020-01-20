@@ -6,7 +6,7 @@ import {useState, useEffect} from 'react'
 import '../../styles/CoursePage.scss'
 
 export default function CoursePage() {
-    const [courses, setCourses] = useState([]);
+    const [courses, setCourses] = useState(null);
     const [filterText, setFilterText] = useState('');
 
     useEffect(()=>{
@@ -31,12 +31,13 @@ export default function CoursePage() {
             onChange={e => setFilterText(e.target.value)} value = {filterText}
             placeholder = "Search all courses"/>
             <div className = "Courses-Structure">
-                {courses.filter(name => {
-                        return name.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
-                    }).map((item, i) =>(
-                    <CourseCard key={i} title={item.name} author={item.provider.name} 
-                    price={item.price} credits={item.maximumCredits} stars={item.rating} />
-                ))}
+                {courses != null ? 
+                (courses.filter(name => {
+                    return name.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
+                }).map((item, i) => (
+                    <CourseCard key={i} title={item.name} author={item.provider.name}
+                        price={item.price} credits={item.maximumCredits} stars={item.rating} />
+                ))):("Loading...")}
             </div>
         </>
     )
