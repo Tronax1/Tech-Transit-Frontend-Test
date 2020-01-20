@@ -12,7 +12,7 @@ export default function CourseCard({title, author, price, credits, stars}) {
                 <h5>{author}</h5>
             </div>
             <div className = "card-footer">
-                <div>{price > 0 ? (price):("FREE")}</div>
+                <div className = "price-color">{price > 0 ? (`$ ${price}`):("FREE")}</div>
                 <div>{stars} Stars</div>
             </div>    
         </div>
