@@ -27,7 +27,9 @@ export default function CoursePage() {
 
     return (
         <>
-            <input type = "text" onChange={e => setFilterText(e.target.value)} value = {filterText}/>
+            <input className = "search" type = "text" 
+            onChange={e => setFilterText(e.target.value)} value = {filterText}
+            placeholder = "Search all courses"/>
             <div className = "Courses-Structure">
                 {courses.filter(name => {
                         return name.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0

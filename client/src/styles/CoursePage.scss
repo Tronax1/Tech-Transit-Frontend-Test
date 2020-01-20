@@ -5,3 +5,19 @@
     width: 100%;
     justify-content: center;
 }
+.search{
+    border-style: none;
+    border-bottom: 1px solid lightskyblue;
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+    width: 50%;
+    margin-left: 15vw;
+    margin-top: 40px;
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 768px){
+    .search{
+        margin-left: 4vw;
+    }
+}

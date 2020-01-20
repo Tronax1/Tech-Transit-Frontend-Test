@@ -1,12 +1,15 @@
 import React from 'react';
 import CoursePage from './components/Course Page/CoursePage'
-import './App.css';
+import NavBar from './components/Navigation/NavBar'
 
 function App() {
   return (
-    <main>
-      <CoursePage/>
-    </main>
+    <>
+      <NavBar/>
+      <main>
+        <CoursePage/>
+      </main>
+    </>
   );
 }
 
