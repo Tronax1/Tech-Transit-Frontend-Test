@@ -1,6 +1,8 @@
+@import '/colors';
+
 .Nav{
     height: 25vh;
-    background-color: #3C7CF4; 
+    background-color: $secondaryColor; 
     color: white;
 }
 .Nav-flex{

@@ -28,7 +28,7 @@
 .credits{
     width: 100px;
     height: 30px;
-    background-color: white;
+    background-color: $elementBackground;
     margin: 10px;
     border-radius: 15px;
     text-align: center;
@@ -37,7 +37,7 @@
     color: gray;
 }
 .price-color{
-    color: #3C7CF4;
+    color: $secondaryColor;
     font-weight: bold;
 }
 .card-body{
